@@ -108,9 +108,13 @@ int validateScore(int scoreNumber, char* name)
             printf("Error: Please enter a valid integer.\n");
             score = 0;
             while (getchar() != '\n');
-        } else if (score <= 0 || score > 100) printf("Error: Scores must be between 0 and 100. Try again.\n");
+        } else if (score <= 0 || score > 100)
+        {
+            printf("Error: Scores must be between 0 and 100. Try again.\n");
+            while (getchar() != '\n'); // Clear input buffer
+        }
     } while (score <= 0 || score > 100);
-    //printf("You stored test score %d for %s: %d\n", scoreNumber, name, score);
+    while (getchar() != '\n'); // Clear input buffer
     return score;
 }
 
@@ -155,9 +159,17 @@ void storeStudentData(int* studentsNumber, Student* students)
     {
         for (i = 0; i < *studentsNumber; i++)
         {
-            printf("\nEnter name for student %d: ", i + 1);
-            fgets(students[i].name, MAX_NAME, stdin);
-            students[i].name[strcspn(students[i].name, "\n")] = '\0';
+            do
+            {
+                printf("\nEnter name for student %d: ", i + 1);
+                fgets(students[i].name, MAX_NAME, stdin);
+                students[i].name[strcspn(students[i].name, "\n")] = '\0';
+                if (strlen(students[i].name) == MAX_NAME - 1 && students[i].name[MAX_NAME - 2] != '\n') 
+                {
+                    printf("Error: Name too long\n");
+                    while (getchar() != '\n'); // Clear input buffer
+                }
+            } while (strlen(students[i].name) == MAX_NAME - 1 && students[i].name[MAX_NAME - 2] != '\n');
 
             for (j = 0; j < NUM_STUDENT_SCORES; j++)
             {
@@ -217,6 +229,30 @@ void printStudentsGradeReports(int* studentsNumber, Student* students)
 }
 
 /*
+ * Calculate class average grades.
+ *
+ * @param students Pointer to the array of Student structs.
+ * @param studentsNumber Number of students to include in the report.
+ */
+void calculateAverageClassGrades(int* studentsNumber, Student* students)
+{
+    int i, roundAverage;
+    float classAverage = 0;
+
+    if (*studentsNumber > 0 && students != NULL)
+    {
+        printf("\n\n --- Class Grades Report --- \n\n");
+        for (i = 0; i < *studentsNumber; i++)
+        {
+            classAverage += students[i].average;
+        }
+        classAverage /= *studentsNumber;
+        roundAverage = (int) classAverage;
+        printf("Average = %.2f, Grade = %c\n\n", classAverage, generateLetterScore(&roundAverage));
+    }
+}
+
+/*
  * Main function: Orchestrates the program flow.
  * - Prompts for and allocates memory for students.
  * - Collects student data.
@@ -243,6 +279,9 @@ int main ()
 
     /*Print a formatted report with each student’s name, average score, and letter grade.*/
     printStudentsGradeReports(&studentsNumber, students);
+
+    /*Add a function to calculate the class average (across all students) and print it at the end of the report.*/
+    calculateAverageClassGrades(&studentsNumber, students);
 
     free(students);
     students = NULL;

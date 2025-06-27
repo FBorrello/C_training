@@ -33,3 +33,11 @@ Submission:
 
 Share your Git repo link or upload the source file (grade_calculator.c).
 Include a brief note on any difficulties you faced (e.g., handling string input, debugging loops).
+
+Compilation:
+
+gcc -o grade_calculator class_grade_calculator.c
+
+Usage:
+
+./grade_calculator
