@@ -28,6 +28,7 @@
 #include <string.h>
 
 #define studentScores 3
+#define MAX_NAME 50
 
 typedef struct grade{
     char letter;
@@ -35,7 +36,7 @@ typedef struct grade{
 } Grade;
 
 typedef struct student{
-    char name[50];
+    char name[MAX_NAME];
     Grade grades[studentScores];
     float average;
     char grade;
@@ -77,8 +78,10 @@ Student* addStudentsNumber(int* studentsNumber)
             while (getchar() != '\n');
         } else if (*studentsNumber <= 0) {
             printf("Error: Number of students must be positive.\n");
+            while (getchar() != '\n');
         }
     } while (result != 1 || *studentsNumber <= 0);
+    while (getchar() != '\n');
     //printf("The number of strudent is %d\n", *studentsNumber);
     Student* students = (Student*)malloc(*studentsNumber * sizeof(Student));
     if (students == NULL) {
@@ -153,8 +156,8 @@ void storeStudentData(int* studentsNumber, Student* students)
         for (i = 0; i < *studentsNumber; i++)
         {
             printf("\nEnter name for student %d: ", i + 1);
-            scanf(" %49[^\n]", students[i].name);
-            //printf("You entered the following student name: %s\n", students[i].name);
+            fgets(students[i].name, 50, stdin);
+            students[i].name[strcspn(students[i].name, "\n")] = '\0';
 
             for (j = 0; j < studentScores; j++)
             {
