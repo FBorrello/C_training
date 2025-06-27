@@ -114,7 +114,6 @@ void calculateStudentsScoresAverage(int* studentsNumber, Student* students)
 
     if (*studentsNumber > 0 && students != NULL)
     {
-        printf("\n\n --- Grade Report --- \n\n");
         for (i = 0; i < *studentsNumber; i++)
         {
             for (j = 0; j < studentScores; j++)
@@ -124,6 +123,19 @@ void calculateStudentsScoresAverage(int* studentsNumber, Student* students)
             students[i].average = (float) scoresSum / studentScores;
             int avgScore = (int)(students[i].average + 0.5);
             students[i].grade = generateLetterScore(&avgScore);
+        }
+    }
+}
+
+void printStudentsGradeReports(int* studentsNumber, Student* students)
+{
+    int i;
+
+    if (*studentsNumber > 0 && students != NULL)
+    {
+        printf("\n\n --- Grade Report --- \n\n");
+        for (i = 0; i < *studentsNumber; i++)
+        {
             printf("%s: Average = %.2f, Grade = %c\n\n", students[i].name, students[i].average, students[i].grade);
         }
     }
@@ -131,6 +143,7 @@ void calculateStudentsScoresAverage(int* studentsNumber, Student* students)
 
 int main ()
 {
+    /*Handle errors: reject invalid scores (outside 0–100) and ensure the number of students is positive.*/
     int studentsNumber = 0;
     Student* students;
     
@@ -144,7 +157,7 @@ int main ()
     calculateStudentsScoresAverage(&studentsNumber, students);
 
     /*Print a formatted report with each student’s name, average score, and letter grade.*/
-    /*Handle errors: reject invalid scores (outside 0–100) and ensure the number of students is positive.*/
+    printStudentsGradeReports(&studentsNumber, students);
 
     return 0;
 }
