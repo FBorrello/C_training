@@ -38,12 +38,18 @@ void displayGrades(Grade* array, int arraySize)
 
 Student* addStudentsNumber(int* studentsNumber)
 {
+    int result;
     do {
-        printf("Enter number of students: ");
-        scanf("%d", studentsNumber);
-        if (*studentsNumber <=0) printf("Error: Number of student must be positive integer.");
-    } while (*studentsNumber <=0);
-    printf("The number of strudent is %d\n", *studentsNumber);
+        printf("Enter number of students (positive integer): ");
+        result = scanf("%d", studentsNumber);
+        if (result != 1) {
+            printf("Error: Please enter a valid integer.\n");
+            while (getchar() != '\n');
+        } else if (*studentsNumber <= 0) {
+            printf("Error: Number of students must be positive.\n");
+        }
+    } while (result != 1 || *studentsNumber <= 0);
+    //printf("The number of strudent is %d\n", *studentsNumber);
     Student* students = (Student*)malloc(*studentsNumber * sizeof(Student));
     if (students == NULL) {
         printf("Error: Memory allocation failed.\n");
@@ -58,9 +64,12 @@ int validateScore(int scoreNumber, char* name)
     do {
         printf("Enter test score %d for %s: ", scoreNumber, name);
         scanf("%d", &score);
-        if (score <= 0 || score > 100) printf("Error: Scores must be between 0 and 100. Try again.\n");
+        if (score != 1) {
+            printf("Error: Please enter a valid integer.\n");
+            while (getchar() != '\n');
+        } else if (score <= 0 || score > 100) printf("Error: Scores must be between 0 and 100. Try again.\n");
     } while (score <= 0 || score > 100);
-    printf("You stored test score %d for %s: %d\n", scoreNumber, name, score);
+    //printf("You stored test score %d for %s: %d\n", scoreNumber, name, score);
     return score;
 }
 
@@ -95,7 +104,7 @@ void storeStudentData(int* studentsNumber, Student* students)
         {
             printf("\nEnter name for student %d: ", i + 1);
             scanf(" %[^\n]", students[i].name);
-            printf("You entered the following student name: %s\n", students[i].name);
+            //printf("You entered the following student name: %s\n", students[i].name);
 
             for (j = 0; j < studentScores; j++)
             {
@@ -110,12 +119,13 @@ void storeStudentData(int* studentsNumber, Student* students)
 
 void calculateStudentsScoresAverage(int* studentsNumber, Student* students)
 {
-    int i, j, scoresSum = 0;
+    int i, j, scoresSum;
 
     if (*studentsNumber > 0 && students != NULL)
     {
         for (i = 0; i < *studentsNumber; i++)
         {
+            scoresSum = 0;
             for (j = 0; j < studentScores; j++)
             {
                 scoresSum += students[i].grades[j].number;
