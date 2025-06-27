@@ -156,7 +156,7 @@ void storeStudentData(int* studentsNumber, Student* students)
         for (i = 0; i < *studentsNumber; i++)
         {
             printf("\nEnter name for student %d: ", i + 1);
-            fgets(students[i].name, 50, stdin);
+            fgets(students[i].name, MAX_NAME, stdin);
             students[i].name[strcspn(students[i].name, "\n")] = '\0';
 
             for (j = 0; j < NUM_STUDENT_SCORES; j++)
