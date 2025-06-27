@@ -11,25 +11,25 @@ Commit your code to your Git repo with clear comments and a README*/
 
 #define studentScores 3
 
-typedef struct student{
-    char name[50];
-    int grades[studentScores];
-    float average;
-} Student; 
-
 typedef struct grade{
     char letter;
     int number;
 } Grade;
 
-void displayIntArray(int* array, int arraySize)
+typedef struct student{
+    char name[50];
+    Grade grades[studentScores];
+    float average;
+} Student; 
+
+void displayGrades(Grade* array, int arraySize)
 {
     int i;
     if (arraySize > 0)
     {
         for (i = 0; i < arraySize; i++)
         {
-            printf("%d ", array[i]);
+            printf("%d->%c ", array[i].number, array[i].letter);
         }
         printf("\n");
     }
@@ -63,6 +63,27 @@ int validateScore(int scoreNumber, char* name)
     return score;
 }
 
+char generateLetterScore(int* score)
+{
+    if (*score > 0 && *score < 101)
+    {
+        switch (*score / 10)
+        {
+        case 10:
+        case 9:
+            return 'A';
+        case 8:
+            return 'B';
+        case 7:
+            return 'C';
+        case 6:
+            return 'D';
+        default:
+            return 'F';
+        }
+    }
+}
+
 void storeStudentData(int* studentsNumber, Student* students)
 {
     int i, j;
@@ -76,10 +97,11 @@ void storeStudentData(int* studentsNumber, Student* students)
 
             for (j = 0; j < studentScores; j++)
             {
-                students[i].grades[j] = validateScore(j + 1, students[i].name);
+                students[i].grades[j].number = validateScore(j + 1, students[i].name);
+                students[i].grades[j].letter = generateLetterScore(&students[i].grades[j].number);
             }
             printf("Student %s scores: ", students[i].name);
-            displayIntArray(students[i].grades, studentScores);
+            displayGrades(students[i].grades, studentScores);
         }
     }
 }
