@@ -11,3 +11,14 @@ int main() {
     printf("Area of circle: %.2f\n", PI * radius * radius);
     return 0;
 }
+
+/*
+gcc -DDEBUG circle.c -o circle && ./circle
+Debug: Starting program
+Area of circle: 78.54
+*/
+
+/*
+cc circle.c -o circle && ./circle
+Area of circle: 78.54
+*/
