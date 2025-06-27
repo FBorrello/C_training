@@ -20,6 +20,7 @@ typedef struct student{
     char name[50];
     Grade grades[studentScores];
     float average;
+    char grade;
 } Student; 
 
 void displayGrades(Grade* array, int arraySize)
@@ -82,6 +83,7 @@ char generateLetterScore(int* score)
             return 'F';
         }
     }
+    return 'E';
 }
 
 void storeStudentData(int* studentsNumber, Student* students)
@@ -106,6 +108,27 @@ void storeStudentData(int* studentsNumber, Student* students)
     }
 }
 
+void calculateStudentsScoresAverage(int* studentsNumber, Student* students)
+{
+    int i, j, scoresSum = 0;
+
+    if (*studentsNumber > 0 && students != NULL)
+    {
+        printf("\n\n --- Grade Report --- \n\n");
+        for (i = 0; i < *studentsNumber; i++)
+        {
+            for (j = 0; j < studentScores; j++)
+            {
+                scoresSum += students[i].grades[j].number;
+            }
+            students[i].average = (float) scoresSum / studentScores;
+            int avgScore = (int)(students[i].average + 0.5);
+            students[i].grade = generateLetterScore(&avgScore);
+            printf("%s: Average = %.2f, Grade = %c\n\n", students[i].name, students[i].average, students[i].grade);
+        }
+    }
+}
+
 int main ()
 {
     int studentsNumber = 0;
@@ -118,6 +141,8 @@ int main ()
     storeStudentData(&studentsNumber, students);
 
     /*Calculate the average score for each student and assign a letter grade (A: 90–100, B: 80–89, C: 70–79, D: 60–69, F: <60).*/
+    calculateStudentsScoresAverage(&studentsNumber, students);
+
     /*Print a formatted report with each student’s name, average score, and letter grade.*/
     /*Handle errors: reject invalid scores (outside 0–100) and ensure the number of students is positive.*/
 
