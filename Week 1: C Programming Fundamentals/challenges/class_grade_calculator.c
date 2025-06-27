@@ -52,7 +52,7 @@ Student* addStudentsNumber(int* studentsNumber)
     //printf("The number of strudent is %d\n", *studentsNumber);
     Student* students = (Student*)malloc(*studentsNumber * sizeof(Student));
     if (students == NULL) {
-        printf("Error: Memory allocation failed.\n");
+        printf("Error: Failed to allocate memory for %d students.\n", *studentsNumber);
         exit(1);
     }
     return students;
@@ -60,12 +60,13 @@ Student* addStudentsNumber(int* studentsNumber)
 
 int validateScore(int scoreNumber, char* name)
 {
-    int score;
+    int score, result;
     do {
         printf("Enter test score %d for %s: ", scoreNumber, name);
-        scanf("%d", &score);
-        if (score != 1) {
+        result = scanf("%d", &score);
+        if (result != 1) {
             printf("Error: Please enter a valid integer.\n");
+            score = 0;
             while (getchar() != '\n');
         } else if (score <= 0 || score > 100) printf("Error: Scores must be between 0 and 100. Try again.\n");
     } while (score <= 0 || score > 100);
@@ -75,7 +76,7 @@ int validateScore(int scoreNumber, char* name)
 
 char generateLetterScore(int* score)
 {
-    if (*score > 0 && *score < 101)
+    if (*score >= 0 && *score <= 100)
     {
         switch (*score / 10)
         {
