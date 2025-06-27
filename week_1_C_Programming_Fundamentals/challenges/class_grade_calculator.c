@@ -27,7 +27,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define studentScores 3
+#define NUM_STUDENT_SCORES 3
 #define MAX_NAME 50
 
 typedef struct grade{
@@ -37,7 +37,7 @@ typedef struct grade{
 
 typedef struct student{
     char name[MAX_NAME];
-    Grade grades[studentScores];
+    Grade grades[NUM_STUDENT_SCORES];
     float average;
     char grade;
 } Student; 
@@ -159,13 +159,13 @@ void storeStudentData(int* studentsNumber, Student* students)
             fgets(students[i].name, 50, stdin);
             students[i].name[strcspn(students[i].name, "\n")] = '\0';
 
-            for (j = 0; j < studentScores; j++)
+            for (j = 0; j < NUM_STUDENT_SCORES; j++)
             {
                 students[i].grades[j].number = validateScore(j + 1, students[i].name);
                 students[i].grades[j].letter = generateLetterScore(&students[i].grades[j].number);
             }
             printf("Student %s scores: ", students[i].name);
-            displayGrades(students[i].grades, studentScores);
+            displayGrades(students[i].grades, NUM_STUDENT_SCORES);
         }
     }
 }
@@ -185,11 +185,11 @@ void calculateStudentsScoresAverage(int* studentsNumber, Student* students)
         for (i = 0; i < *studentsNumber; i++)
         {
             scoresSum = 0;
-            for (j = 0; j < studentScores; j++)
+            for (j = 0; j < NUM_STUDENT_SCORES; j++)
             {
                 scoresSum += students[i].grades[j].number;
             }
-            students[i].average = (float) scoresSum / studentScores;
+            students[i].average = (float) scoresSum / NUM_STUDENT_SCORES;
             int avgScore = (int)(students[i].average + 0.5);
             students[i].grade = generateLetterScore(&avgScore);
         }
