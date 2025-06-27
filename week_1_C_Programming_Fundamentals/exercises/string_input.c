@@ -13,3 +13,11 @@ int main() {
     printf("fgets result: %s\n", name2);
     return 0;
 }
+
+/*
+./string
+Enter name with scanf: Fabrizio Borrello
+Enter name with fgets: Fabrizio Borrello
+scanf result: Fabrizio
+fgets result: Fabrizio Borrello
+*/
