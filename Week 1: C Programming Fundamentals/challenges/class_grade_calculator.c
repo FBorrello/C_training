@@ -169,5 +169,8 @@ int main ()
     /*Print a formatted report with each student’s name, average score, and letter grade.*/
     printStudentsGradeReports(&studentsNumber, students);
 
+    free(students);
+    students = NULL;
+
     return 0;
 }
