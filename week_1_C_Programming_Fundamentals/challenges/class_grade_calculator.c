@@ -1,9 +1,27 @@
-/*Requirements:
-
-Use functions to modularize your code (e.g., one for calculating the average, one for determining the grade).
-Use a switch or if statements for grade assignment.
-Store names in character arrays (e.g., char name[50]).
-Commit your code to your Git repo with clear comments and a README*/
+/*
+ * Class Grade Calculator
+ *
+ * This program calculates the average score and assigns a letter grade
+ * for each student based on three test scores. It handles multiple students,
+ * validates input, and produces a formatted grade report.
+ *
+ * Compilation:
+ *   gcc -o grade_calculator class_grade_calculator.c
+ *
+ * Usage:
+ *   ./grade_calculator
+ *
+ * Assumptions:
+ *   - Student names are up to 49 characters long (excluding null terminator).
+ *   - Test scores are integers between 0 and 100, inclusive.
+ *   - The number of students is a positive integer.
+ * Requirements:
+ *
+ * - Use functions to modularize your code (e.g., one for calculating the average, one for determining the grade).
+ * - Use a switch or if statements for grade assignment.
+ * - Store names in character arrays (e.g., char name[50]).
+ * - Commit your code to your Git repo with clear comments and a README
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,6 +41,12 @@ typedef struct student{
     char grade;
 } Student; 
 
+/*
+ * Displays the grades for a student.
+ *
+ * @param array Pointer to an array of Grade structs containing test scores and letters.
+ * @param arraySize Number of grades to display (typically 3).
+ */
 void displayGrades(Grade* array, int arraySize)
 {
     int i;
@@ -36,6 +60,12 @@ void displayGrades(Grade* array, int arraySize)
     }
 }
 
+/*
+ * Prompts the user for the number of students and allocates memory for them.
+ *
+ * @param studentsNumber Pointer to an integer to store the number of students.
+ * @return Pointer to the allocated array of Student structs, or NULL on failure.
+ */
 Student* addStudentsNumber(int* studentsNumber)
 {
     int result;
@@ -58,6 +88,13 @@ Student* addStudentsNumber(int* studentsNumber)
     return students;
 }
 
+/*
+ * Validates and retrieves a test score for a student.
+ *
+ * @param scoreNumber The test number (1-based index) for the prompt.
+ * @param name The name of the student for the prompt.
+ * @return The validated score (0 to 100).
+ */
 int validateScore(int scoreNumber, char* name)
 {
     int score, result;
@@ -74,6 +111,12 @@ int validateScore(int scoreNumber, char* name)
     return score;
 }
 
+/*
+ * Converts a numerical score to a letter grade.
+ *
+ * @param score Pointer to the numerical score (0 to 100).
+ * @return The corresponding letter grade ('A' to 'F', or 'E' for invalid input).
+ */
 char generateLetterScore(int* score)
 {
     if (*score >= 0 && *score <= 100)
@@ -96,6 +139,12 @@ char generateLetterScore(int* score)
     return 'E';
 }
 
+/*
+ * Collects data (name and test scores) for all students.
+ *
+ * @param students Pointer to the array of Student structs.
+ * @param studentsNumber Number of students to process.
+ */
 void storeStudentData(int* studentsNumber, Student* students)
 {
     int i, j;
@@ -104,7 +153,7 @@ void storeStudentData(int* studentsNumber, Student* students)
         for (i = 0; i < *studentsNumber; i++)
         {
             printf("\nEnter name for student %d: ", i + 1);
-            scanf(" %[^\n]", students[i].name);
+            scanf(" %49[^\n]", students[i].name);
             //printf("You entered the following student name: %s\n", students[i].name);
 
             for (j = 0; j < studentScores; j++)
@@ -118,6 +167,12 @@ void storeStudentData(int* studentsNumber, Student* students)
     }
 }
 
+/*
+ * Calculates the average score and assigns an overall letter grade for each student.
+ *
+ * @param students Pointer to the array of Student structs.
+ * @param studentsNumber Number of students to process.
+ */
 void calculateStudentsScoresAverage(int* studentsNumber, Student* students)
 {
     int i, j, scoresSum;
@@ -138,6 +193,12 @@ void calculateStudentsScoresAverage(int* studentsNumber, Student* students)
     }
 }
 
+/*
+ * Prints a formatted grade report for all students.
+ *
+ * @param students Pointer to the array of Student structs.
+ * @param studentsNumber Number of students to include in the report.
+ */
 void printStudentsGradeReports(int* studentsNumber, Student* students)
 {
     int i;
@@ -152,6 +213,16 @@ void printStudentsGradeReports(int* studentsNumber, Student* students)
     }
 }
 
+/*
+ * Main function: Orchestrates the program flow.
+ * - Prompts for and allocates memory for students.
+ * - Collects student data.
+ * - Calculates averages and grades.
+ * - Prints the grade report.
+ * - Frees allocated memory.
+ *
+ * @return 0 on successful execution.
+ */
 int main ()
 {
     /*Handle errors: reject invalid scores (outside 0–100) and ensure the number of students is positive.*/
