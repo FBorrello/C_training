@@ -1,0 +1,22 @@
+Quiz 1: C Syntax
+Question: What is the correct way to declare a variable x that stores the integer value 42 in C, and how does this differ from Python?
+B) int x = 42;
+Quiz 2: Control Structures
+Question: Which loop is most appropriate for reading input until a user enters a negative number?
+C) do { ... } while (x < 0)
+Quiz 3: Functions
+Question: What happens if you omit the return statement in a C function declared as int sum(int a, int b)?
+C) The behavior is undefined, and the function may return a garbage value.
+Quiz 4: Basic I/O
+Question: Why does scanf("%d", &x) require the & operator, while printf("%d", x) does not?
+A) scanf modifies the variable’s value, so it needs the memory address; printf only reads the value.
+B) scanf uses pass-by-reference, while printf uses pass-by-value.
+Quiz 5: Compilation Process
+Question: What does the preprocessor do when it encounters #include <stdio.h> in your code?
+B) Copies the contents of stdio.h into the source file.
+Quiz 6: String Handling
+Question: Why is fgets(name, 50, stdin) preferred over scanf("%s", name) for reading a user’s name?
+B) fgets handles spaces and limits input to prevent buffer overflow; scanf does not.
+Quiz 7: Error Handling
+Question: How can you check if scanf("%d", &x) successfully read an integer?
+B) Check the return value of scanf (e.g., if (scanf("%d", &x) == 1)).
