@@ -27,20 +27,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "grade_calculator.h"
+
 #define NUM_STUDENT_SCORES 3
 #define MAX_NAME 50
-
-typedef struct grade{
-    char letter;
-    int number;
-} Grade;
-
-typedef struct student{
-    char name[MAX_NAME];
-    Grade grades[NUM_STUDENT_SCORES];
-    float average;
-    char grade;
-} Student; 
 
 /*
  * Displays the grades for a student.
