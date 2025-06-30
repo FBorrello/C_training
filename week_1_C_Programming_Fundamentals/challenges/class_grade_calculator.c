@@ -169,7 +169,10 @@ void storeStudentData(int* studentsNumber, Student* students)
                     printf("Error: Name too long\n");
                     while (getchar() != '\n'); // Clear input buffer
                 }
-            } while (strlen(students[i].name) == MAX_NAME - 1 && students[i].name[MAX_NAME - 2] != '\n');
+                if (strlen(students[i].name) == 0) {
+                    printf("Error: Name cannot be empty\n");
+                }
+            } while ((strlen(students[i].name) == MAX_NAME - 1 && students[i].name[MAX_NAME - 2] != '\n') || strlen(students[i].name) == 0);
 
             for (j = 0; j < NUM_STUDENT_SCORES; j++)
             {
