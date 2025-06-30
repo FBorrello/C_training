@@ -1,0 +1,14 @@
+Week 1 Report - Francesco Borrello
+Date: June 30, 2025
+Mastery Scores:
+- C Syntax: 10
+- Functions: 10
+- Basic I/O: 10
+- Compilation Process: 10
+- String Handling: 10
+- Error Handling: 10
+Achievements:
+- Mastered all Week 1 topics with perfect quiz (7/7) and advanced class_grade_calculator.c.
+- Exceeded requirements with struct, class average, README.md, header file, and empty name check.
+- Demonstrated high engagement with rapid updates and feedback challenges.
+Action Items: None; Week 1 complete. Prepare for Week 2.
