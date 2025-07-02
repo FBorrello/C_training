@@ -4,34 +4,36 @@ This file tracks my daily progress in C programming quizzes, with the goal of ma
 
 ## Session: July 2, 2025
 
-**Date and Time**: July 2, 2025, 10:44 AM CEST
+**Date and Time**: July 2, 2025, 2:37 PM CEST
 
-**Difficulty Level**: Very Hard
+**Difficulty Level**: Extremely Hard
 
 **Sub-Topic Scores**:
 - **Fundamentals**: 6/6 (100%) [unchanged]
-- **Control Structures**: 10/14 (71.43%) [updated: 7/11 + 2/2 + 1/1 (challenge)]
-- **Arrays**: 12/15 (80%) [updated: 11/14 + 1/1]
-- **Pointers**: 8/10 (80%) [updated: 7/9 + 1/1]
-- **Functions**: 7/7 (100%) [updated: 6/6 + 1/1]
-- **Strings**: 11/14 (78.57%) [updated: 10/13 + 1/1]
-- **Structures**: 7/7 (100%) [updated: 6/6 + 1/1]
-- **File Handling**: 7/7 (100%) [updated: 6/6 + 1/1]
-- **Dynamic Memory Allocation**: 9/10 (90%) [updated: 8/9 + 1/1]
-- **Preprocessing**: 8/9 (88.89%) [updated: 7/8 + 1/1]
+- **Control Structures**: 14/20 (70%) [updated: 13/19 + 1/1 (R4)]
+- **Arrays**: 13/16 (81.25%) [unchanged]
+- **Pointers**: 9/11 (81.82%) [unchanged]
+- **Functions**: 8/8 (100%) [unchanged]
+- **Strings**: 11/14 (78.57%) [unchanged]
+- **Structures**: 8/9 (88.89%) [unchanged]
+- **File Handling**: 8/8 (100%) [unchanged]
+- **Dynamic Memory Allocation**: 10/11 (90.91%) [unchanged]
+- **Preprocessing**: 9/10 (90%) [unchanged]
+- **Challenge (Control Structures)**: 0.8/1 (80%) [updated: revised challenge error]
 
-**Overall Score**: 85/104 (81.73%) [updated: 74/93 + 10/10 + 1/1 (challenge)]
+**Overall Score**: 97.8/118 (82.88%) [updated: 97/117 + 1/1 (R4) + 0.8/1]
 
 **Weak Areas**: None (all sub-topics ≥ 70%)
 
 **Notes**:
-- Perfect performance on Quizzes 93–102 (10/10, 100%), improving overall score to 81.73%.
-- Control Structures improved from 63.64% to 71.43% with strong quiz performance (100%) and challenge (90%). Minor formatting issue in challenge (missing spaces) prevented perfect score.
-- All other sub-topics remain strong (80–100%); Arrays (80%), Pointers (80%), Strings (78.57%), and Dynamic Memory Allocation (90%) are approaching 90% target.
-- Challenge problem demonstrated solid Control Structures understanding, addressing previous weakness.
-- Difficulty level (Very Hard) remains appropriate given 81.73% overall score.
+- Strong performance on Quizzes 103–112 (9/10, 90%) and reinforcement quizzes (4/4, 100%) at Extremely Hard difficulty.
+- Control Structures reached 70% with correct R4 answer, addressing previous weakness (68.42%).
+- Structures at 88.89% after correct reinforcement quiz.
+- Challenge scored 80% due to incorrect printing logic (extra numbers printed); logic for bitwise operations and input validation was correct.
+- Overall score improved to 82.88%, approaching 90% target.
+- Extremely Hard difficulty was appropriate; next session should maintain this level to push Control Structures and other sub-topics toward 90%.
 
 **Next Steps**:
-- Focus on formatting precision in output (e.g., adding spaces between numbers).
-- Continue challenging Control Structures quizzes to solidify 90%+ performance.
-- Share this progress log or repository link at the start of the next session.
+- Review challenge feedback and optionally revise triangular pattern code to fix printing logic.
+- Commit this progress log to the repository.
+- Next session will focus on Extremely Hard Control Structures quizzes and challenge other strong areas (Arrays, Pointers, Preprocessing) to reach 90%.
