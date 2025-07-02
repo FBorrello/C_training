@@ -40,6 +40,7 @@ int main()
         else if (user_entry < 1 || 9 < user_entry)
         {
             printf("Invalid\n");
+            return 1;
         }
     } while (result != 1 || (user_entry < 1 || 9 < user_entry));
 
@@ -53,7 +54,7 @@ int main()
             for (j = 1; j <= i; j++)
             {
                 if (j % 3 == 0) continue;
-                printf("%d", j);
+                printf("%d ", j);
             }
             printf("\n");
         }
