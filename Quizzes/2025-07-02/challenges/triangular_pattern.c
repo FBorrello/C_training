@@ -41,7 +41,7 @@ int main()
         for (j = 1; j <= i; j++)
         {
             if (containsTwoOnes(j) && !twoOnesFound) twoOnesFound = 1; 
-            if (twoOnesFound) printf("%d ", j);
+            if (containsTwoOnes(j)) printf("%d ", j);
         }
         
         if (!twoOnesFound)
