@@ -2,50 +2,53 @@
 
 This file tracks my daily progress in C programming quizzes and challenges, with the goal of maintaining a 70% success rate per sub-topic and increasing difficulty as I improve. Each session includes quiz results, sub-topic scores, overall performance, weak areas, notes for improvement, and the current difficulty level. The log is maintained in a public repository to ensure continuity across sessions.
 
-## Session: July 4, 2025
+## Session: July 5, 2025
 
-**Date and Time**: July 4, 2025, 3:50 PM CEST
+**Date and Time**: July 5, 2025, 10:15 AM CEST
 
 **Difficulty Level**: Extremely Hard
 
-**Sub-Topic Scores**:
+**Sub-Topic Scores** (Updated):
 - **Fundamentals**: 6/6 (100%) [unchanged]
-- **Control Structures**: 21/27 (77.78%) [20/26 + 1/1 (Q8)]
+- **Control Structures**: 22/28 (78.57%) [21/27 + 1/1 (Q3)]
 - **Arrays**: 17/20 (85%) [unchanged]
-- **Pointers**: 26/32 (81.25%) [23/29 + 3/3 (Q4, Q9, Challenge placeholder)]
-- **Functions**: 9/9 (100%) [8/8 + 1/1 (Q1)]
+- **Pointers**: 30/36 (83.33%) [26/32 + 2/2 (Q2, Q5) + 2/2 (Challenge)]
+- **Functions**: 9/9 (100%) [unchanged]
 - **Strings**: 16.5/20 (82.5%) [unchanged]
 - **Structures**: 8/9 (88.89%) [unchanged]
 - **File Handling**: 8/8 (100%) [unchanged]
-- **Dynamic Memory Allocation**: 15/18 (83.33%) [14/17 + 1/1 (Q6)]
+- **Dynamic Memory Allocation**: 15/18 (83.33%) [unchanged]
 - **Preprocessing**: 9/10 (90%) [unchanged]
-- **Bit Fields**: 1/1 (100%) [0/0 + 1/1 (Q2)]
-- **Volatile Variables**: 1/2 (50%) [0/0 + 1/2 (Q3, Q10)]
-- **IoT Protocols**: 1/1 (100%) [0/0 + 1/1 (Q5)]
-- **Embedded AI**: 1/1 (100%) [0/0 + 1/1 (Q7)]
-- **Challenge (Pointers)**: 3/4 (75%) [3/4, awaiting Challenge submission]
+- **Bit Fields**: 1/1 (100%) [unchanged]
+- **Volatile Variables**: 3/4 (75%) [1/2 + 2/2 (Q1, Q4)]
+- **IoT Protocols**: 2/2 (100%) [1/1 + 1/1 (Q6)]
+- **Embedded AI**: 2/2 (100%) [1/1 + 1/1 (Q7)]
+- **Memory-Mapped I/O**: 1/1 (100%) [0/0 + 1/1 (Q8)]
+- **DMA**: 1/1 (100%) [0/0 + 1/1 (Q9)]
+- **Real-Time Constraints**: 1/1 (100%) [0/0 + 1/1 (Q10)]
+- **Challenge (Pointers)**: 7/8 (87.5%) [3/4 + 4/4 (New Challenge)]
 
-**Overall Score**: 142/170 (83.53%) [133/160 + 9/10 (Q1–Q10) + 0/0 (Challenge pending)]
+**Overall Score**: 156/184 (84.78%) [142/170 + 14/14 (Quizzes + Challenge)]
 
 **Weak Areas**:
-- **Volatile Variables (50%)**: Incorrect answer in Q3 indicates a need to understand `volatile` behavior in interrupt-driven systems.
-- **Pointers (81.25%)**: Strong but not yet at 90%; function pointers and circular buffers need practice.
-- **Control Structures (77.78%)**: Consistent but requires attention to detail to avoid errors like Q3.
+- **Control Structures (78.57%)**: Improved slightly but still below 90%. Needs focus on bit manipulation and edge cases.
+- **Pointers (83.33%)**: Strong today, but function pointers and complex buffer management could use reinforcement.
+- **Strings (82.5%)**: No quizzes today; revisit in future sessions.
 
 **Notes**:
-- Achieved 9/10 (90%) on quizzes, hitting the target success rate for this session.
-- Expanded scope to include function pointers, bit fields, volatile variables, and IoT/AI topics, which kept the session engaging.
-- Error in Q3 (Volatile Variables) suggests a need to reinforce interrupt-related concepts.
-- Overall score improved to 83.53%, but the 90% target requires consistent challenge success.
-- Awaiting code challenge submission for circular buffer implementation.
-- Using an online compiler; consider specifying a target hardware platform (e.g., ESP32, STM32) for more tailored IoT challenges.
+- Achieved 100% on quizzes and code challenge, exceeding the 90% session target.
+- Expanded scope to include Memory-Mapped I/O, DMA, and Real-Time Constraints, handled excellently.
+- Volatile Variables improved to 75%, showing progress but not yet at 90%.
+- Overall score rose to 84.78%, nearing the 90% goal.
+- Code challenge showcased excellent interrupt-driven system design.
+- Using an online compiler; consider specifying hardware (e.g., ESP32, STM32) for future challenges.
 
 **Next Steps**:
-- **Volatile Variables**: Include 2 quizzes on interrupt-driven scenarios and volatile variable usage.
-- **Pointers**: Include 2 quizzes on function pointers and circular buffers to push toward 90%.
-- **Control Structures**: Include 1 quiz on bit manipulation to reinforce precision.
-- **IoT Protocols**: Include 1 quiz on MQTT/CoAP packet processing.
-- **Embedded AI**: Include 1 quiz on fixed-point arithmetic for AI inference.
-- **Challenge**: Complete the circular buffer challenge and focus on a new Pointers-based IoT task (e.g., interrupt-driven sensor data processing).
-- **Environment**: Share specific hardware details to tailor future challenges for embedded constraints.
-- Share this updated progress log at the start of the next session.
+- **Control Structures**: Add 2 quizzes on advanced bit manipulation and edge cases.
+- **Pointers**: Add 1 quiz on function pointers in callbacks.
+- **Volatile Variables**: Add 1 quiz on shared variable access in interrupt-driven systems.
+- **Strings**: Add 1 quiz on string parsing for IoT (e.g., JSON for MQTT).
+- **New Topics**: Introduce quizzes on low-power modes, watchdog timers, or embedded AI optimization.
+- **Challenge**: Design a Control Structures-based IoT task (e.g., GPIO bit-level sensor control).
+- **Environment**: Share hardware details for tailored challenges.
+- Share this log at the next session’s start.
