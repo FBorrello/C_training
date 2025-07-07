@@ -1,54 +1,58 @@
 # C Programming Training Progress Log
 
-This file tracks my daily progress in C programming quizzes and challenges, with the goal of maintaining a 70% success rate per sub-topic and increasing difficulty as I improve. Each session includes quiz results, sub-topic scores, overall performance, weak areas, notes for improvement, and the current difficulty level. The log is maintained in a public repository to ensure continuity across sessions.
+This file tracks my daily progress in C programming quizzes and challenges, with the goal of maintaining a 70% success rate per sub-topic and increasing difficulty as I improve.
 
-## Session: July 5, 2025
+## Session: July 7, 2025
 
-**Date and Time**: July 5, 2025, 10:15 AM CEST
+**Date and Time**: July 7, 2025, 09:36 AM CEST  
+**Difficulty Level**: Extremely Hard  
+**Hardware**: ESP32 (confirmed)  
 
-**Difficulty Level**: Extremely Hard
+**Sub-Topic Scores** (Updated with Today’s Results):
+- **Fundamentals**: 7/7 (100%) [+1 from Quiz 7]
+- **Control Structures**: 29/35 (82.86%) [+0/1 from Quiz 5]
+- **Arrays**: 17/20 (85%) [No new quizzes]
+- **Pointers**: 31/39 (79.49%) [+1/2 from Quizzes 4, 10]
+- **Functions**: 9/9 (100%) [No new quizzes]
+- **Strings**: 18.5/22 (84.09%) [+1/1 from Quiz 6]
+- **Structures**: 8/9 (88.89%) [No new quizzes]
+- **File Handling**: 8/8 (100%) [No new quizzes]
+- **Dynamic Memory Allocation**: 15/18 (83.33%) [No new quizzes]
+- **Preprocessing**: 9/10 (90%) [No new quizzes]
+- **Bit Fields**: 2/2 (100%) [+1/1 from Quiz 7]
+- **Volatile Variables**: 5/6 (83.33%) [+1/1 from Quiz 3]
+- **IoT Protocols**: 3/3 (100%) [+1/1 from Quiz 6]
+- **Embedded AI**: 3/3 (100%) [+1/1 from Quiz 9]
+- **Memory-Mapped I/O**: 5/6 (83.33%) [+2/2 from Quizzes 1, 2, +2/2 from Challenge]
+- **DMA**: 2/2 (100%) [No new quizzes]
+- **Real-Time Constraints**: 2/2 (100%) [No new quizzes]
+- **Low-Power Modes**: 1/1 (100%) [No new quizzes]
+- **Watchdog Timers**: 1/1 (100%) [No new quizzes]
+- **Task Scheduling**: 1/1 (100%) [+1/1 from Quiz 8]
+- **Challenge (Memory-Mapped I/O)**: 4/4 (100%) [+4/4 from revised submission]
 
-**Sub-Topic Scores** (Updated):
-- **Fundamentals**: 6/6 (100%) [unchanged]
-- **Control Structures**: 22/28 (78.57%) [21/27 + 1/1 (Q3)]
-- **Arrays**: 17/20 (85%) [unchanged]
-- **Pointers**: 30/36 (83.33%) [26/32 + 2/2 (Q2, Q5) + 2/2 (Challenge)]
-- **Functions**: 9/9 (100%) [unchanged]
-- **Strings**: 16.5/20 (82.5%) [unchanged]
-- **Structures**: 8/9 (88.89%) [unchanged]
-- **File Handling**: 8/8 (100%) [unchanged]
-- **Dynamic Memory Allocation**: 15/18 (83.33%) [unchanged]
-- **Preprocessing**: 9/10 (90%) [unchanged]
-- **Bit Fields**: 1/1 (100%) [unchanged]
-- **Volatile Variables**: 3/4 (75%) [1/2 + 2/2 (Q1, Q4)]
-- **IoT Protocols**: 2/2 (100%) [1/1 + 1/1 (Q6)]
-- **Embedded AI**: 2/2 (100%) [1/1 + 1/1 (Q7)]
-- **Memory-Mapped I/O**: 1/1 (100%) [0/0 + 1/1 (Q8)]
-- **DMA**: 1/1 (100%) [0/0 + 1/1 (Q9)]
-- **Real-Time Constraints**: 1/1 (100%) [0/0 + 1/1 (Q10)]
-- **Challenge (Pointers)**: 7/8 (87.5%) [3/4 + 4/4 (New Challenge)]
-
-**Overall Score**: 156/184 (84.78%) [142/170 + 14/14 (Quizzes + Challenge)]
+**Overall Score**: 182/211 (86.26%) [+12/13 from today]
 
 **Weak Areas**:
-- **Control Structures (78.57%)**: Improved slightly but still below 90%. Needs focus on bit manipulation and edge cases.
-- **Pointers (83.33%)**: Strong today, but function pointers and complex buffer management could use reinforcement.
-- **Strings (82.5%)**: No quizzes today; revisit in future sessions.
+- **Pointers (79.49%)**: Missed Quiz 4 (volatile pointer arithmetic). Reinforce volatile pointer handling in embedded systems.
+- **Control Structures (82.86%)**: Missed Quiz 5 (bit manipulation). Practice complex bit checks in IoT contexts.
+- **Volatile Variables (83.33%)**: Improved but needs ISR-specific practice.
+- **Strings (84.09%)**: Stable; continue MQTT parsing practice.
+- **Memory-Mapped I/O (83.33%)**: Improved significantly with perfect challenge score; maintain consistency in bit manipulation and ISR handling.
 
 **Notes**:
-- Achieved 100% on quizzes and code challenge, exceeding the 90% session target.
-- Expanded scope to include Memory-Mapped I/O, DMA, and Real-Time Constraints, handled excellently.
-- Volatile Variables improved to 75%, showing progress but not yet at 90%.
-- Overall score rose to 84.78%, nearing the 90% goal.
-- Code challenge showcased excellent interrupt-driven system design.
-- Using an online compiler; consider specifying hardware (e.g., ESP32, STM32) for future challenges.
-
-**Next Steps**:
-- **Control Structures**: Add 2 quizzes on advanced bit manipulation and edge cases.
-- **Pointers**: Add 1 quiz on function pointers in callbacks.
-- **Volatile Variables**: Add 1 quiz on shared variable access in interrupt-driven systems.
-- **Strings**: Add 1 quiz on string parsing for IoT (e.g., JSON for MQTT).
-- **New Topics**: Introduce quizzes on low-power modes, watchdog timers, or embedded AI optimization.
-- **Challenge**: Design a Control Structures-based IoT task (e.g., GPIO bit-level sensor control).
-- **Environment**: Share hardware details for tailored challenges.
-- Share this log at the next session’s start.
+- Quiz score: 8/10 (80%), meeting 70% target but below 90% goal.
+- Revised challenge corrected bit mask (`0x0020` for bit 5), null check (`&&`), and counter handling, achieving 100%.
+- Clarified bit numbering confusion (0x0010 = bit 4, 0x0020 = bit 5); mentor error in feedback noted.
+- Strong in new topics: Task Scheduling, Embedded AI (100%).
+- ESP32 confirmed; future challenges will align with ESP32 GPIO/interrupt APIs (e.g., `gpio_config`, `gpio_isr_handler_add`).
+- Progress improved (86.26% vs. 85.86%) dueosi: System: **Next Steps**:
+- **Memory-Mapped I/O**: Add 2 quizzes on GPIO bit manipulation and ISR counter handling.
+- **Pointers**: Add 1 quiz on volatile pointer arithmetic in embedded systems.
+- **Control Structures**: Add 1 quiz on complex bit manipulation for IoT.
+- **Volatile Variables**: Add 1 quiz on ISR-safe handling.
+- **Strings**: Add 1 quiz on MQTT payload parsing with edge cases.
+- **New Topics**: Expand task scheduling (e.g., FreeRTOS basics) and embedded AI (e.g., TinyML inference).
+- **Challenge**: Design an ESP32 interrupt-driven sensor task with correct GPIO and ISR handling.
+- **Hardware**: Continue using ESP32; consider FreeRTOS integration.
+- Share this log at the start of the next session.
