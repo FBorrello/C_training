@@ -2,57 +2,64 @@
 
 This file tracks my daily progress in C programming quizzes and challenges, with the goal of maintaining a 70% success rate per sub-topic and increasing difficulty as I improve.
 
-## Session: July 7, 2025
+## Session: July 7, 2025 (New Session)
 
-**Date and Time**: July 7, 2025, 09:36 AM CEST  
+**Date and Time**: July 7, 2025, 01:37 PM CEST  
 **Difficulty Level**: Extremely Hard  
 **Hardware**: ESP32 (confirmed)  
+**FreeRTOS**: Confirmed  
 
-**Sub-Topic Scores** (Updated with Today’s Results):
-- **Fundamentals**: 7/7 (100%) [+1 from Quiz 7]
-- **Control Structures**: 29/35 (82.86%) [+0/1 from Quiz 5]
+**Sub-Topic Scores** (Updated with Final Challenge):
+- **Fundamentals**: 7/7 (100%) [No new quizzes]
+- **Control Structures**: 30/36 (83.33%) [No new challenge contribution]
 - **Arrays**: 17/20 (85%) [No new quizzes]
-- **Pointers**: 31/39 (79.49%) [+1/2 from Quizzes 4, 10]
+- **Pointers**: 36/44 (81.82%) [+1/1 from Challenge]
 - **Functions**: 9/9 (100%) [No new quizzes]
-- **Strings**: 18.5/22 (84.09%) [+1/1 from Quiz 6]
+- **Strings**: 22.5/30 (75%) [+1/1 from Challenge]
 - **Structures**: 8/9 (88.89%) [No new quizzes]
 - **File Handling**: 8/8 (100%) [No new quizzes]
 - **Dynamic Memory Allocation**: 15/18 (83.33%) [No new quizzes]
 - **Preprocessing**: 9/10 (90%) [No new quizzes]
-- **Bit Fields**: 2/2 (100%) [+1/1 from Quiz 7]
-- **Volatile Variables**: 5/6 (83.33%) [+1/1 from Quiz 3]
-- **IoT Protocols**: 3/3 (100%) [+1/1 from Quiz 6]
-- **Embedded AI**: 3/3 (100%) [+1/1 from Quiz 9]
-- **Memory-Mapped I/O**: 5/6 (83.33%) [+2/2 from Quizzes 1, 2, +2/2 from Challenge]
+- **Bit Fields**: 2/2 (100%) [No new quizzes]
+- **Volatile Variables**: 12/14 (85.71%) [+1/1 from Challenge]
+- **IoT Protocols**: 8/10 (80%) [+1/1 from Challenge]
+- **Embedded AI**: 5/5 (100%) [No new challenge contribution]
+- **Memory-Mapped I/O**: 13/15 (86.67%) [+1/1 from Challenge]
 - **DMA**: 2/2 (100%) [No new quizzes]
 - **Real-Time Constraints**: 2/2 (100%) [No new quizzes]
 - **Low-Power Modes**: 1/1 (100%) [No new quizzes]
 - **Watchdog Timers**: 1/1 (100%) [No new quizzes]
-- **Task Scheduling**: 1/1 (100%) [+1/1 from Quiz 8]
-- **Challenge (Memory-Mapped I/O)**: 4/4 (100%) [+4/4 from revised submission]
+- **Task Scheduling**: 7/8 (87.5%) [+1/1 from Challenge]
+- **Challenge (Strings, Volatile Variables, Memory-Mapped I/O, IoT Protocols, Task Scheduling, Pointers)**: 19/28 (67.86%) [+4/4 from first challenge, +2/4 from second challenge, +2/4 from third challenge, +2/4 from fourth challenge, +3/4 from fifth challenge]
 
-**Overall Score**: 182/211 (86.26%) [+12/13 from today]
+**Overall Score**: 209/249 (83.94%) [+3/4 from final challenge]
 
 **Weak Areas**:
-- **Pointers (79.49%)**: Missed Quiz 4 (volatile pointer arithmetic). Reinforce volatile pointer handling in embedded systems.
-- **Control Structures (82.86%)**: Missed Quiz 5 (bit manipulation). Practice complex bit checks in IoT contexts.
-- **Volatile Variables (83.33%)**: Improved but needs ISR-specific practice.
-- **Strings (84.09%)**: Stable; continue MQTT parsing practice.
-- **Memory-Mapped I/O (83.33%)**: Improved significantly with perfect challenge score; maintain consistency in bit manipulation and ISR handling.
+- **Strings (75%)**: Improved with `snprintf`, but buffer size mismatch (18 vs. 16 bytes) shows need for constraint checking.  
+- **IoT Protocols (80%)**: Improved, but buffer size issue affects MQTT correctness.  
+- **Pointers (81.82%)**: Stable; reinforce volatile pointer arrays.  
+- **Control Structures (83.33%)**: Stable; practice complex bit manipulation.  
+- **Volatile Variables (85.71%)**: Stable; continue ISR-safe shared variables.  
+- **Memory-Mapped I/O (86.67%)**: Stable; maintain ISR precision.  
+- **Task Scheduling (87.5%)**: Improved; focus on FreeRTOS `xSemaphoreTake`/`xSemaphoreGive` and `vTaskDelay`.
 
 **Notes**:
-- Quiz score: 8/10 (80%), meeting 70% target but below 90% goal.
-- Revised challenge corrected bit mask (`0x0020` for bit 5), null check (`&&`), and counter handling, achieving 100%.
-- Clarified bit numbering confusion (0x0010 = bit 4, 0x0020 = bit 5); mentor error in feedback noted.
-- Strong in new topics: Task Scheduling, Embedded AI (100%).
-- ESP32 confirmed; future challenges will align with ESP32 GPIO/interrupt APIs (e.g., `gpio_config`, `gpio_isr_handler_add`).
-- Progress improved (86.26% vs. 85.86%) dueosi: System: **Next Steps**:
-- **Memory-Mapped I/O**: Add 2 quizzes on GPIO bit manipulation and ISR counter handling.
-- **Pointers**: Add 1 quiz on volatile pointer arithmetic in embedded systems.
-- **Control Structures**: Add 1 quiz on complex bit manipulation for IoT.
-- **Volatile Variables**: Add 1 quiz on ISR-safe handling.
-- **Strings**: Add 1 quiz on MQTT payload parsing with edge cases.
-- **New Topics**: Expand task scheduling (e.g., FreeRTOS basics) and embedded AI (e.g., TinyML inference).
-- **Challenge**: Design an ESP32 interrupt-driven sensor task with correct GPIO and ISR handling.
-- **Hardware**: Continue using ESP32; consider FreeRTOS integration.
+- Quiz score: 10/10 (100%), showing mastery in weak areas and new topics.  
+- Fifth challenge scored 75% due to buffer size mismatch (18 vs. 16 bytes).  
+- Overall score slightly dropped to 83.94% due to cumulative challenge errors, but still near 90% goal.  
+- FreeRTOS confirmed; challenges will use FreeRTOS tasks/semaphores.  
+- Style: Correct `snprintf` usage, but verify buffer sizes. Comment pseudo-delays (e.g., `// Simulate vTaskDelay(1000)`).  
+- ESP32 confirmed; challenges align with ESP32 and FreeRTOS.  
+- Buffer constraint (16 bytes) was unrealistic; future challenges will use 24 bytes.
+
+**Next Steps**:
+- **Strings**: Add 2 quizzes on MQTT payload formatting with `snprintf` and buffer size checks.  
+- **IoT Protocols**: Add 2 quizzes on MQTT payload validation and formatting.  
+- **Task Scheduling**: Add 2 quizzes on FreeRTOS semaphores and task delays.  
+- **Volatile Variables**: Add 1 quiz on ISR-safe shared variables.  
+- **Memory-Mapped I/O**: Add 1 quiz on ISR-driven GPIO handling.  
+- **Pointers**: Add 1 quiz on volatile pointer arrays.  
+- **Embedded AI**: Add 1 quiz on TinyML inference.  
+- **Challenge**: Design an ESP32 FreeRTOS task with ISR and semaphore to process sensor data for MQTT.  
+- **Hardware**: Continue with ESP32 and FreeRTOS.  
 - Share this log at the start of the next session.
