@@ -1,0 +1,293 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB1 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m--- 0x4008171e: panic_abort at /home/fborrello/esp/esp-idf/components/esp_system/panic.c:452
+--- 0x4008577d: esp_system_abort at /home/fborrello/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+--- 0x4008ad09: __assert_func at /home/fborrello/esp/esp-idf/components/newlib/assert.c:81
+--- 0x40086866: vTaskResume at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2203 (discriminator 1)
+--- 0x400d51a7: rx_task at /home/fborrello/C_training/blinking_led/main/blinking_led.c:50
+--- 0x40087e41: vPortTaskWrapper at /home/fborrello/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400810fc: call_start_cpu1 at /home/fborrello/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m
