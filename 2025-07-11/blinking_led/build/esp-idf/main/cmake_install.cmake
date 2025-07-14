@@ -1,4 +1,4 @@
-# Install script for directory: /home/fborrello/C_training/blinking_led/main
+# Install script for directory: /home/fborrello/C_training/2025-07-11/blinking_led/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

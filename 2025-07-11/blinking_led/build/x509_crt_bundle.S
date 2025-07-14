@@ -1,4 +1,4 @@
-/* * Data converted from /home/fborrello/C_training/blinking_led/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/fborrello/C_training/2025-07-11/blinking_led/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

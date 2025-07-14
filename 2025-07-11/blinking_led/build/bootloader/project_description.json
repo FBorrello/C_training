@@ -1,8 +1,8 @@
 {
     "project_name":       "bootloader",
     "project_path":       "/home/fborrello/esp/esp-idf/components/bootloader/subproject",
-    "build_dir":          "/home/fborrello/C_training/blinking_led/build/bootloader",
-    "config_file":        "/home/fborrello/C_training/blinking_led/sdkconfig",
+    "build_dir":          "/home/fborrello/C_training/2025-07-11/blinking_led/build/bootloader",
+    "config_file":        "/home/fborrello/C_training/2025-07-11/blinking_led/sdkconfig",
     "config_defaults":    "",
     "bootloader_elf":     "",
     "app_elf":            "bootloader.elf",

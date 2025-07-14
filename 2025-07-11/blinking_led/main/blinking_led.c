@@ -90,8 +90,8 @@ void simulation_task(void *pvParameters) {
         rx_semaphore = NULL;
     }
 
-    gpio_reset_pin(STAND_BY_LED_PIN);
     gpio_set_level(RX_LED_PIN, 0);
+    gpio_set_level(STAND_BY_LED_PIN, 0);
 
     printf("Simulation complete, system cleaned\n");
     vTaskDelete(NULL);
