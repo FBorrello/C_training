@@ -6,7 +6,8 @@
 - **Role**: QA lead with 7+ years of Python development experience, familiar with testing frameworks and debugging.
 - **Embedded C Experience**: Beginner-intermediate, with basic knowledge of FreeRTOS tasks, GPIOs, and semaphores, gained through hands-on LED blinking projects.
 - **Project Context**: Our connectivity unit uses an ESP32 to collect telemetry (e.g., speed, temperature, GPS) and dynamic data, communicate via Wi-Fi/Bluetooth with a mobile app, and adjust engine responses. The system requires reliable, real-time operation and clear status indicators (e.g., LEDs).
-- **Hardware**: ESP32 CAM, ESP32 CAM MB, USB cable, soldering-free breadboard, and electronic components (e.g., LEDs, buttons, resistors, sensors like temperature or GPS modules).
+- **Hardware**: ESP32 CAM, ESP32 CAM MB, USB cable, soldering-free breadboard, and electronic components (e.g., LEDs, buttons, resistors, ultrasonic sensor).
+-**Software**: VS code connected to WSL, IDF 5.1.
 
 **Training Preferences**:
 - **Hands-On Learning**: Provide practical coding challenges, hardware experiments, and debugging tasks using my ESP32 CAM and breadboard.
@@ -17,18 +18,15 @@
 - **Progress Tracking**: Track my progress with scores, milestones (e.g., mastering FreeRTOS tasks, implementing Wi-Fi), and feedback on code and debugging. Provide short-term goals (e.g., “Write a task to read a sensor”).
 - **Interactive Q&A**: End each session with a dedicated question period to address technical doubts, clarify concepts, and explore project applications. Encourage deep, specific questions.
 - **Exploration**: Suggest self-directed tasks (e.g., reading ESP-IDF docs, experimenting with new components) to support my research-oriented approach.
-- **Activity Requests**: Provide new training activities (lectures, challenges, quizzes) only when I request them, ensuring I’m ready to progress.
+- **Activity Requests**: Provide new training activities (lectures, challenges, quizzes).
 
 **Expectations**:
 - Deliver engaging, hands-on sessions with clear instructions, code examples, and test plans.
 - Provide feedback on my code, serial outputs, and debugging efforts, highlighting strengths and areas for improvement.
 - Gradually increase complexity (e.g., from GPIO control to Wi-Fi integration) while ensuring tasks are achievable.
 - Tie learning to my project’s goals, making activities useful and motivating.
+- Apply TDD for coding.
 
-**Example Activities**:
-- Write a FreeRTOS task to blink an LED based on a button press, with a test plan to verify timing.
-- Debug a firmware module with a stack overflow or task synchronization issue, analyzing backtraces.
-- Implement a Wi-Fi task to send mock telemetry data to a mobile app, with test cases for reliability.
-- Preprocess sensor data (e.g., temperature) for edge AI, simulating a simple decision rule.
-
-I’m excited to learn, debug, and build skills that make me a valuable contributor to my team’s IoT and AI-driven connectivity unit!
+**General Workflow Activities**:
+-Provide the assignment without providing code or solutions in advance.
+-Always wait for my feedbacks/questions.

@@ -4,13 +4,17 @@
 #include <driver/gpio.h>
 #include <esp_timer.h>
 #include <rom/ets_sys.h>
+#include <freertos/queue.h>
 
-#define TRIG_PIN GPIO_NUM_13
+#define TRIG_PIN GPIO_NUM_16
 #define ECHO_PIN GPIO_NUM_15
 #define STAND_BY_LED_PIN GPIO_NUM_4
-#define TANK_DEPTH 30.0 // Tank depth in cm (adjust based on your tank)
+#define RX_LED_PIN 33
+#define TANK_DEPTH 80.0 // Tank depth in cm (adjust based on your tank)
 #define ECHO_TIMEOUT_US 50000 // Timeout for ECHO pin (50ms, adjust as needed)
 static const char *TAG = "WATER_LEVEL_TASK";
+QueueHandle_t telemetry_queue;
+TaskHandle_t stand_by_task_handle;
 
 void water_level_task(void *pvParameters) {
     gpio_set_direction(TRIG_PIN, GPIO_MODE_OUTPUT);
@@ -43,15 +47,32 @@ void water_level_task(void *pvParameters) {
         uint64_t end_time = esp_timer_get_time();
 
         // Calculate distance and water level
-        float duration = (end_time - start_time) / 1000.0; // Convert to ms
-        float distance = (duration * 0.034) / 2; // Distance in cm
+        float duration = (end_time - start_time); // Convert to us
+        float distance = (duration /2) * 0.0343; // Distance in cm
         if (distance < 2.0 || distance > 400.0 || duration == 0) {
             ESP_LOGE(TAG, "Invalid measurement: %.2f cm", distance);
         } else {
             float level_percent = ((TANK_DEPTH - distance) / TANK_DEPTH) * 100;
             ESP_LOGI(TAG, "Distance: %.2f cm, Water Level: %.1f%%", distance, level_percent);
+            xQueueSend(telemetry_queue, &level_percent, portMAX_DELAY);
+            ESP_LOGI(TAG, "Sent: %.1f%%", level_percent);
         }
         vTaskDelay(pdMS_TO_TICKS(2000));
+    }
+}
+
+void telemetry_task(void *pvParameters) {
+    float level_percent;
+    while (1) {
+        if (xQueueReceive(telemetry_queue, &level_percent, portMAX_DELAY)) {
+            vTaskSuspend(stand_by_task_handle);
+            gpio_set_level(STAND_BY_LED_PIN, 0);
+            gpio_set_level(RX_LED_PIN, 1);
+            ESP_LOGI(TAG, "Telemetry: %.1f%%", level_percent);
+            vTaskDelay(pdMS_TO_TICKS(200));
+            gpio_set_level(RX_LED_PIN, 0);
+            vTaskResume(stand_by_task_handle);
+        }
     }
 }
 
@@ -66,6 +87,9 @@ void stand_by_task(void *pvParameters) {
 }
 
 void app_main() {
-    xTaskCreate(water_level_task, "water_level_task", 4096, NULL, 5, NULL);
-    xTaskCreate(stand_by_task, "stand_by_task", 2048, NULL, 1, NULL);
+    gpio_set_direction(RX_LED_PIN, GPIO_MODE_OUTPUT);
+    telemetry_queue = xQueueCreate(5, sizeof(float));
+    xTaskCreate(water_level_task, "water_level_task", 2048, NULL, 2, NULL);
+    xTaskCreate(telemetry_task, "telemetry_task", 2048, NULL, 3, NULL);
+    xTaskCreate(stand_by_task, "stand_by_task", 1024, NULL, 1, &stand_by_task_handle);
 }
